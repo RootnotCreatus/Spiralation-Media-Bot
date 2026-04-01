@@ -37,13 +37,12 @@ ALLOWED_USER_IDS = {
     if part.strip().isdigit()
 }
 
-# Пока названия даны нейтральные. Позже можно переименовать под реальные задачи.
 TOPICS: Dict[str, int] = {
-    "Топик 1": 1,
-    "Топик 8": 8,
-    "Топик 11": 11,
-    "Топик 14": 14,
-    "Топик 64": 64,
+    "Base": 1,
+    "Медиа": 8,
+    "Релизы": 11,
+    "Разговорник": 14,
+    "Полезности": 64,
 }
 
 TOPIC_BY_THREAD_ID = {thread_id: label for label, thread_id in TOPICS.items()}
